@@ -1,8 +1,8 @@
-import express from "express";
+import express, { Router } from "express";
 import { ContactUs } from "../controllers/contactController";
 
-const contactRoute = express.Router();
+const contactRoute: Router = express.Router();
 
-contactRoute.post("/contact", ContactUs); // Ensure this matches the function signature
+contactRoute.post("/contact", ContactUs); // Ensure function signature matches
 
 export default contactRoute;
